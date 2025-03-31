@@ -1,0 +1,139 @@
+/* *, *::before, *::after {
+    box-sizing: border-box;
+} */
+
+body {
+    padding: 0;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.rest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.rest div {
+    border: 1px solid black;
+    margin-top: 50px;
+    background-color: gray;
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.rest h3 {
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: right;
+    margin-right: 10px;
+    padding-right: 10px;
+    width: 20%;
+    background-color: cornflowerblue;
+}
+
+.rest .part2 h3{
+    background-color: palevioletred;
+}
+
+.rest .part3 h3{
+    background-color: palegreen;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        text-align: center;
+    }
+    
+    .rest {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .rest div {
+        border: 2px solid black;
+        margin-top: 30px;
+        background-color: gray;
+        width: 94%;
+        height: 200px;
+        overflow: auto;
+        padding: 10px;
+    }
+    
+    .rest h3 {
+        border: 2px solid black;
+        margin: 0;
+        float: right;
+        text-align: center;
+        justify-content: center;
+        margin-right: 10px;
+        padding-right: 10px;
+        width: 20%;
+        background-color: cornflowerblue;
+    }
+    
+    .rest .part2 h3{
+        background-color: palevioletred;
+    }
+    
+    .rest .part3 h3{
+        background-color: palegreen;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        text-align: center;
+    }
+    
+    .rest {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .rest .part3 {
+        width: 196%;
+    }
+    
+    .rest div {
+        border: 2px solid black;
+        margin-top: 30px;
+        background-color: gray;
+        width: 94%;
+        height: 200px;
+        overflow: auto;
+        padding: 10px;
+    }
+    
+    .rest h3 {
+        border: 2px solid black;
+        margin: 0;
+        float: right;
+        text-align: center;
+        justify-content: center;
+        margin-right: 10px;
+        padding-right: 10px;
+        width: 20%;
+        background-color: cornflowerblue;
+    }
+    
+    .rest .part2 h3{
+        background-color: palevioletred;
+    }
+    
+    .rest .part3 h3{
+        background-color: palegreen;
+    }
+}
